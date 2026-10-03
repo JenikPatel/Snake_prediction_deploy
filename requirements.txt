@@ -7,3 +7,4 @@ plum-dispatch==2.9.0
 numpy==2.1.3
 torch==2.11.0
 torchvision==0.26.0
+ipywidgets
