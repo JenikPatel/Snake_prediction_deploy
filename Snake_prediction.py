@@ -1,9 +1,14 @@
-from fastai.vision.all import *
 import json
 import pathlib, pathlib._local
 from fastcore.all import *
 import streamlit as st
 import sys
+
+try:
+    from fastai.vision.all import *
+except Exception:
+    st.code(traceback.format_exc())
+    st.stop()
 
 @st.cache_resource
 def load_model():
